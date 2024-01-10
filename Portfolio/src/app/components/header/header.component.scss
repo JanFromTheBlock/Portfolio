@@ -1,0 +1,68 @@
+.header-component{
+    background-image: linear-gradient(#FFFFFF, #D7FFEC);
+    height: 1028px;
+        .ellipse-big{
+            width: 892px;
+            height: 892px;
+            position: absolute;
+            top: -71px;
+            right: 52%;
+        }
+        .ellipse-small{
+            position: absolute;
+            height: 206px;
+            width: 206px;
+            top: 925px;
+            left: calc(50% - 103px);
+        }
+   
+}
+.spans{
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+    position: absolute;
+    top: 227px;
+    left: 52%;
+    color: #57E8A2;
+    font-weight: 400;
+}
+.name{
+    font-size: 64px;
+    line-height: 64px;
+    margin-bottom: -50px;
+}
+.job{
+    font-size: 128px;
+    margin-bottom: -100px;
+}
+.links{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    top: 790px;
+    right: 100px;
+    >div{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        &:hover{
+            justify-content: flex-start;
+        }
+        >img{
+            width: 30px;
+            height: auto;
+        }
+    }
+    
+}
+
+app-navbar{
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+}

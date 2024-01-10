@@ -1,3 +1,20 @@
 html, body {
     margin: 0;
 }
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('./assets/fonts/montserrat.ttf') format('truetype'); 
+}  
+@font-face {
+    font-family: 'baloo';
+    src: url('./assets/fonts/baloo.ttf') format('truetype'); 
+}  
+
+.montserrat{
+    font-family: 'montserrat', Arial, Helvetica, sans-serif;
+}
+
+.baloo{
+    font-family: 'baloo', Arial, Helvetica, sans-serif;
+}

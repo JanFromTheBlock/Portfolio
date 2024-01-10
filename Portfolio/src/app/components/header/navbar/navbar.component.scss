@@ -1,0 +1,33 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 100px;
+
+    >img{
+        width: 64px;
+        height: auto;
+    }
+}
+
+.spans{
+    display: flex;
+    gap: 36px;
+    font-size: 24px;
+    color: #57E8A2;
+
+        >span{
+            width: 128px;
+            display: flex;
+            justify-content: flex-start;
+            &:hover{
+                font-weight: 800;
+                cursor: pointer;
+            }
+        }
+        
+}
+
+.span-short{
+    width: 102px !important;
+}
