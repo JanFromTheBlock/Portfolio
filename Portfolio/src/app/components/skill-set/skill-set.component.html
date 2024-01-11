@@ -1,0 +1,9 @@
+<div class="skill-set">
+    <span class="baloo">Skill set</span>
+    <div class="skill-logos">
+        <div class="logo" *ngFor="let imageUrl of imageUrls; let i = index">
+            <img [src]="imageUrl">
+            <div class="montserrat title">{{ titles[i] }}</div>
+        </div>
+    </div>
+</div>
