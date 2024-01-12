@@ -18,3 +18,14 @@ html, body {
 .baloo{
     font-family: 'baloo', Arial, Helvetica, sans-serif;
 }
+
+.button{
+    color: #57E8A2;
+    border: 2px solid #57E8A2; 
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 24px;
+    background-color: white;
+    max-width: 254px;
+    box-shadow: 5px 5px 5px 0 rgba($color: #000000, $alpha: 0.15);
+ }
