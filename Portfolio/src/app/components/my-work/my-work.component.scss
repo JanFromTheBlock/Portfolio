@@ -58,6 +58,7 @@
 
 .my-work {
     padding: 100px;
+    max-width: 1800px;
 }
 
 .text {
@@ -103,4 +104,9 @@
 .text-end{
     text-align: end;
     align-items: end;
+}
+
+.dflex{
+    display: flex;
+    justify-content: center;
 }

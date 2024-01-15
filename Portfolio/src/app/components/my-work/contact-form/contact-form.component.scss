@@ -1,12 +1,11 @@
 .contact-section{
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
-    background-image: linear-gradient(#FFFFFF, #D7FFEC);
+    max-width: 1800px;
+    margin: 0 100px;
 }
 
 h1{
-    margin: 0;
     font-weight: 400;
     font-size: 92px;
     color: #57E8A2;
@@ -15,6 +14,7 @@ h1{
 .contact-text{
     display: flex;
     flex-direction: column;
+    width: calc(50% - 100px);
 }
 
 .span1{
@@ -33,4 +33,20 @@ h1{
     font-weight: 400;
     font-size: 16px;
     color: #57E8A2;
+}
+
+.content{
+    display: flex;
+    gap: 150px;
+    max-width: 1300px;
+}
+
+app-formular{
+    width: 50%;
+}
+
+.dflex{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(#FFFFFF, #D7FFEC);
 }
