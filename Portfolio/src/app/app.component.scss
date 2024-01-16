@@ -2,3 +2,13 @@
     display: flex;
     justify-content: center;
 }
+app-footer{
+    background-image: linear-gradient(to bottom right, #57E8A2, #33B476);
+    height: 300px;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

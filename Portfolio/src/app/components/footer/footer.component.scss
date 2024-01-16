@@ -1,0 +1,15 @@
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 1800px;
+    align-items: center;
+}
+
+.footer-imgs{
+    display: flex;
+    gap: 42px;
+}
+.margin-right{
+    margin-right: -110px;
+}
