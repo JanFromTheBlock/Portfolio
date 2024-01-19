@@ -34,13 +34,17 @@
     display: flex;
     justify-content: center;
     align-items: end;
-    pointer-events: none;
     transition-property: align-items;
     transition-delay: 5s;
     transition-duration: 5s;
 
     &:hover {
         align-items: start;
+
+        > img {
+            align-items: start;
+            transform: scale(1.1, 1.1);
+        }
     }
 
 
@@ -49,10 +53,6 @@
         height: 393px;
         box-shadow: 5px 5px 15px 0 rgba($color: #000000, $alpha: 0.15);
         pointer-events: auto;
-
-        &:hover {
-            transform: scale(1.1, 1.1);
-        }
     }
 }
 
@@ -88,25 +88,25 @@
         margin-bottom: 35px;
     }
 
-    >button{
+    >button {
         width: 135px;
     }
 }
 
-.margin-left{
+.margin-left {
     margin-left: -50px;
 }
 
-.margin-right{
+.margin-right {
     margin-left: 50px;
 }
 
-.text-end{
+.text-end {
     text-align: end;
     align-items: end;
 }
 
-.dflex{
+.dflex {
     display: flex;
     justify-content: center;
 }

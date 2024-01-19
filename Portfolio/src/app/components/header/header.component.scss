@@ -52,6 +52,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        transition: justify-content 5s ease-out;
 
         &:hover{
             justify-content: flex-start;

@@ -13,3 +13,32 @@
 .margin-right{
     margin-right: -110px;
 }
+
+.button-white:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.impressum{
+    position: relative;
+    display: block;
+}
+
+.impressum::after{
+    content: "";
+    position: absolute;
+    left: calc(50% - 28.5px);
+    bottom: -6px;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.impressum:hover::after{
+    width: 60%;
+}
