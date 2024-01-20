@@ -1,13 +1,11 @@
 .about-me {
     margin: 240px 100px;
     max-width: 1800px;
-    >img {
-        height: 82px;
-        width: 82px;
-        position: absolute;
-        top: 1086px;
-        right: 324px;
-    }
+}
+
+.bubble{
+    height: 82px;
+    width: 82px;
 }
 
 @keyframes button-hover {
@@ -61,6 +59,14 @@
     justify-content: center;
     align-items: flex-start;
     gap: 75px;
+ }
+ 
+ .div-bubble{
+    width: 100%;
+    max-width: 1800px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px 150px 0 100px;
  }
 
  

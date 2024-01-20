@@ -1,6 +1,7 @@
 .dflex{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 app-footer{
     background-image: linear-gradient(to bottom right, #57E8A2, #33B476);

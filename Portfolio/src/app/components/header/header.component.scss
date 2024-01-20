@@ -6,9 +6,8 @@
         .ellipse-big{
             width: 892px;
             height: 892px;
-            position: absolute;
-            top: -5%;
-            left: 0%;
+            margin-left: -900px;
+            margin-top: -350px;
         }
         .ellipse-small{
             position: absolute;
@@ -23,11 +22,9 @@
     display: flex;
     flex-direction: column;
     z-index: 99;
-    position: absolute;
-    top: 227px;
-    left: 52%;
     color: #57E8A2;
     font-weight: 400;
+    margin-top: 200px;
 }
 .name{
     font-size: 64px;
@@ -44,7 +41,6 @@
     gap: 25px;
     margin:  0px 100px 64px 0px;
     justify-content: end;
-    width: 100%;
     align-items: end;
     >div{
         width: 40px;
@@ -78,4 +74,21 @@ app-navbar{
     height: 100%;
     max-width: 1800px;
     width: 100%;
+}
+
+.div-portait{
+    z-index: 99;
+    height: 900px;
+    margin-top: 124px;
+    display: flex;
+
+}
+.portait-and-spans{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.portait{
+    z-index: 99;
 }
