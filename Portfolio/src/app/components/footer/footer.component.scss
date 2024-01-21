@@ -42,3 +42,13 @@
 .impressum:hover::after{
     width: 60%;
 }
+
+@media (max-width: 1500px) {
+    .margin-right{
+        margin-right: 0;
+    }
+
+    .impressum{
+        margin-left: -100px;
+    }
+}

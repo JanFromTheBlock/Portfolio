@@ -61,3 +61,32 @@ img{
 .up-button:hover{
     content: url('./../../../../assets/img/buttons/up_button_white.png');
 }
+
+@media (max-width: 1500px) {
+    .content{
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+    app-formular{
+        width: 550px;
+    }
+
+    .contact-text{
+        width: 550px;
+    }
+
+    h1{
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+
+    .contact-section{
+        width: 100%;
+    }
+
+    img{
+        margin-top: 0;
+    }
+
+}
