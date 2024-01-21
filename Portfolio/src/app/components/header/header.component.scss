@@ -15,6 +15,7 @@
             width: 206px;
             top: 925px;
             left: calc(50% - 103px);
+            z-index: 100;
         }
    
 }
@@ -77,8 +78,6 @@ app-navbar{
 }
 
 .div-portait{
-    z-index: 99;
-    height: 900px;
     margin-top: 124px;
     display: flex;
 
@@ -91,4 +90,39 @@ app-navbar{
 
 .portait{
     z-index: 99;
+    height: 900px;
+    width: 768px;
+}
+
+@media (max-width: 1500px) {
+    .links{
+        display: none;
+    }
+
+    .header-component{
+        height: 1318px;
+    }
+
+    .portait-and-spans{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .div-portait{
+        margin-top: -200px;
+    }
+
+    .portait{
+        margin-top: 200px;
+    }
+
+    .spans{
+        color: white;
+        margin-bottom: 50px;
+        margin-top: 150px;
+    }
+
+    .ellipse-small{
+        top: 1215px !important;
+    }
 }
