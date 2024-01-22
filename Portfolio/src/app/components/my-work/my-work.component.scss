@@ -111,6 +111,20 @@
     justify-content: center;
 }
 
+.button-area{
+    display: flex;
+}
+
+.div-mobile-btn{
+    display: none;
+    justify-content: flex-end;
+}
+
+.mobile-btn{
+    color: white !important;
+    background-color: #57e8a2 !important;
+}
+
 @media (max-width: 1500px) {
     .my-work{
         display: flex;
@@ -136,6 +150,14 @@
         text-align: center;
         gap: 20px;
         align-items: unset;
+    }
+
+    .div-mobile-btn{
+        display: flex;
+    }
+
+    .justi-end{
+        justify-content: flex-start;
     }
 
 }

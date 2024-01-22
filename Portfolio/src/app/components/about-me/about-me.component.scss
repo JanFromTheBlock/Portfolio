@@ -79,4 +79,21 @@
     }
  }
 
+ @media (max-width: 900px){
+    .title{
+        font-size: 100px;
+        width: 500px;
+        margin: 0 25px;
+    }
+
+    .text{
+        margin: 0 25px;
+        width: 500px;
+    }
+
+    .information{
+        margin-top: 44px;
+    }
+ }
+
  

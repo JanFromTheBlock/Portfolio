@@ -39,3 +39,13 @@ img{
         cursor: pointer;
     }
 }
+
+@media (max-width: 1500px) {
+    .navbar{
+        max-width: 600px;
+    }
+
+    a{
+        color: white !important;
+    }
+}

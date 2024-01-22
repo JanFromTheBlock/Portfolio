@@ -1,18 +1,18 @@
-.skill-set{
+.skill-set {
     background-image: linear-gradient(to bottom right, #57E8A2, #33B476);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
-    
-        >span{
-            font-size: 96px;  
-            margin: 100px 0 60px 0;
-        }
+
+    >span {
+        font-size: 96px;
+        margin: 100px 0 60px 0;
+    }
 }
 
-.skill-logos{
+.skill-logos {
     display: flex;
     column-gap: 128px;
     row-gap: 76px;
@@ -21,12 +21,13 @@
     justify-content: center;
     margin: 0 100px 100px 100px;
 }
-.title{
-   text-align: center;
-   margin-top: 10px;
+
+.title {
+    text-align: center;
+    margin-top: 10px;
 }
 
-.logo{
+.logo {
     width: 86px;
     text-align: center;
     height: 120px;
@@ -34,12 +35,30 @@
     flex-direction: column;
     justify-content: end;
 
-    &:hover{
+    &:hover {
         gap: 10px;
         font-weight: 800;
     }
 }
 
-img{
+img {
     max-height: 86px;
+}
+
+@media (max-width: 900px) {
+    .logo {
+        max-height: 75px;
+        max-width: 70px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skill-logos{
+        column-gap: 80px;
+        row-gap: 57px;
+    }
+
+    .skill-set{
+        margin: 50px 0 35px 0;
+    }
 }
