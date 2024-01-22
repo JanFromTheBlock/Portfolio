@@ -2,6 +2,7 @@ html,
 body {
     margin: 0;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -59,4 +60,10 @@ body {
 .justi-cent {
     justify-content: center;
     width: 100% !important;
+}
+
+@media (max-width: 900px){
+    .div-button{
+        justify-content: center !important;
+    }
 }

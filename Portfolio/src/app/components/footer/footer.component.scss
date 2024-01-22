@@ -52,3 +52,16 @@
         margin-left: -100px;
     }
 }
+
+@media (max-width: 900px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 23px;
+    }
+
+    .impressum{
+        margin-left: 0;
+        margin-top: 23px;
+    }
+}
