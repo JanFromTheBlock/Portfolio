@@ -3,7 +3,7 @@
     max-width: 1800px;
 }
 
-.bubble{
+.bubble {
     height: 82px;
     width: 82px;
 }
@@ -38,62 +38,94 @@
     }
 }
 
-.title{
-    font-size: 120px; 
+.title {
+    font-size: 120px;
     color: #57e8a2;
     width: 600px;
     line-height: 1;
- }
+}
 
- .text{
+.text {
     width: 570px;
     font-size: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 13px;
- }
+}
 
- .information{
+.information {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 75px;
- }
- 
- .div-bubble{
+}
+
+.div-bubble {
     width: 100%;
     max-width: 1800px;
     display: flex;
     justify-content: flex-end;
     margin: 50px 150px 0 100px;
- }
+}
 
- @media (max-width: 1500px) {
-    .about-me{
+@media (max-width: 1500px) {
+    .about-me {
         margin: 0 0 100px 0;
     }
 
-    .information{
+    .information {
         flex-direction: column;
     }
- }
+}
 
- @media (max-width: 900px){
-    .title{
+@media (max-width: 900px) {
+    .title {
         font-size: 100px;
         width: 500px;
         margin: 0 25px;
     }
 
-    .text{
+    .text {
         margin: 0 25px;
         width: 500px;
     }
 
-    .information{
+    .information {
         margin-top: 44px;
     }
- }
+}
 
- 
+@media (max-width: 600px) {
+    .div-bubble {
+        margin: 52px 65px -30px 0;
+    }
+
+    .bubble {
+        height: 41px;
+        width: 41px;
+    }
+
+    .about-me{
+        margin: 0;
+    }
+
+    .information{
+        margin: 44px 10px 0 10px;
+    }
+
+    .title{
+        width: 300px;
+        font-size: 64px;
+    }
+
+    .text{
+        width: 300px;
+        font-size: 20px;
+    }
+
+
+
+
+
+}

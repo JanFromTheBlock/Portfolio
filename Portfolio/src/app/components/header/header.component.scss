@@ -156,3 +156,39 @@ app-navbar{
     }
 
 }
+
+@media (max-width: 600px){
+    .header-component{
+        height: 600px;
+    }
+    .div-portait{
+        margin-top: -305px;
+    }
+
+    .portait{
+        height: 375px;
+        width: 320px;
+    }
+
+    .spans{
+        margin-bottom: 145px;
+        margin-top: 50px;
+    }    
+
+    .name{
+        font-size: 36px;
+    }
+
+    .job{
+        font-size: 64px;
+        margin-bottom: -50px;
+    }
+
+    .ellipse-small{
+        height: 103px !important;
+        width: 103px !important;
+        left: calc(50% - 51.5px) !important;
+        top: 548.5px !important;
+    }
+
+}

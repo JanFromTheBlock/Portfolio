@@ -65,3 +65,17 @@ img {
         }
     }
 }
+
+@media (max-width: 600px){
+    .skill-set{
+        >span{
+            font-size: 64px;
+        }
+    }
+
+    .skill-logos{
+        margin: 0 10px 100px 10px;
+    }
+
+
+}
