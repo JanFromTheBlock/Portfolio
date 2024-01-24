@@ -1,0 +1,42 @@
+app-navbar {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 792px;
+    height: 792px;
+    position: absolute;
+    z-index: -1;
+    top: -150px;
+    left: calc(20% - 446px);
+    ;
+}
+
+.div-impressum {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 430px);
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+
+
+@media(max-width: 1500px) {
+    img {
+        left: calc(50% - 446px);
+    }
+}
+
+@media(max-width: 900px){
+    app-navbar{
+        display: none;
+    }
+}

@@ -43,6 +43,11 @@
     width: 60%;
 }
 
+a{
+    text-decoration: none;
+    color: unset;
+}
+
 @media (max-width: 1500px) {
     .margin-right{
         margin-right: 0;
