@@ -8,6 +8,27 @@
     width: 82px;
 }
 
+.button {
+    font-family: "montserrat", Arial, Helvetica, sans-serif;
+    color: #57E8A2;
+    border: 2px solid #57E8A2;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 24px;
+    background-color: white;
+    max-width: 261px;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.15);
+    animation-name: button-hover;
+    animation-duration: 1s;
+
+    //&:hover {
+    //    padding: 20px 40px;
+    //    color: white;
+    //    background: radial-gradient(#57E8A2, #33B476);
+    //    max-width: 281px;
+    //}
+}
+
 @keyframes button-hover {
     0% {
         color: #57E8A2;
@@ -20,7 +41,7 @@
         color: white;
         padding: 14px 37px;
         max-width: 275px;
-        background-color: radial-gradient(#57E8A2 100%, #33B476 100%, #FFFFFF 100%, #FFFFFF 0%, #FFFFFF 0%);
+        background-color: white;
     }
 
     66% {

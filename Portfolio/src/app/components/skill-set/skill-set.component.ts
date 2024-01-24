@@ -10,16 +10,16 @@ import { CommonModule, NgFor } from '@angular/common';
 })
 export class SkillSetComponent {
   imageUrls: string[] = [
-    './../../../assets/img/skills/angular.png',
-    './../../../assets/img/skills/typescript.png',
-    './../../../assets/img/skills/javascript.png',
-    './../../../assets/img/skills/html.png',
-    './../../../assets/img/skills/scrum.png',
-    './../../../assets/img/skills/firebase.png',
-    './../../../assets/img/skills/git.png',
-    './../../../assets/img/skills/css.png',
-    './../../../assets/img/skills/api.png',
-    './../../../assets/img/skills/material_design.png',
+    'assets/img/skills/angular.png',
+    'assets/img/skills/typescript.png',
+    'assets/img/skills/javascript.png',
+    'assets/img/skills/html.png',
+    'assets/img/skills/scrum.png',
+    'assets/img/skills/firebase.png',
+    'assets/img/skills/git.png',
+    'assets/img/skills/css.png',
+    'assets/img/skills/api.png',
+    'assets/img/skills/material_design.png',
   ];
 
   titles: string[] = [
