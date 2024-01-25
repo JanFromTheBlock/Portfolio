@@ -18,42 +18,46 @@
     background-color: white;
     max-width: 261px;
     box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.15);
-    animation-name: button-hover;
-    animation-duration: 1s;
 
-    //&:hover {
-    //    padding: 20px 40px;
-    //    color: white;
-    //    background: radial-gradient(#57E8A2, #33B476);
-    //    max-width: 281px;
-    //}
+    &:hover {
+        padding: 20px 40px;
+        color: white;
+        background: radial-gradient(#57E8A2, #33B476);
+        max-width: 281px;
+        animation-name: button-hover;
+        animation-duration: 1s;
+    }
 }
 
 @keyframes button-hover {
     0% {
         color: #57E8A2;
-        padding: 15px 30px;
+        padding: 12px 30px;
         max-width: 261px;
-        background-color: white;
+        background: white;
     }
 
     33% {
         color: white;
-        padding: 14px 37px;
+        padding: 16px 28px;
         max-width: 275px;
-        background-color: white;
+        background: linear-gradient(
+            to bottom,
+            #57E8A2 100%,
+            #33B476 33%,
+          )
     }
 
     66% {
         color: white;
-        padding: 16px 40px;
+        padding: 20px 40px;
         max-width: 281px;
-        background-color: white;
+        background: radial-gradient(#57E8A2, #33B476);
     }
 
     100% {
         color: white;
-        padding: 17px 40px;
+        padding: 20px 40px;
         max-width: 281px;
         background: radial-gradient(#57E8A2, #33B476);
     }
@@ -127,20 +131,20 @@
         width: 41px;
     }
 
-    .about-me{
+    .about-me {
         margin: 0;
     }
 
-    .information{
+    .information {
         margin: 44px 10px 0 10px;
     }
 
-    .title{
+    .title {
         width: 300px;
         font-size: 64px;
     }
 
-    .text{
+    .text {
         width: 300px;
         font-size: 20px;
     }

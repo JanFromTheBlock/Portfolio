@@ -38,20 +38,24 @@ a{
     text-decoration: none;
 }
 
+
+
 .checkbox-area{
     font-size: 14px;
     display: flex;
     align-items: center;
 
-    &:hover{
-        filter: contrast(0.8);
-
-    }
+    
     
     >input[type="checkbox"]{
         margin-right: 8px;
         width: 24px;
         height: 24px;
+
+        &:hover{
+            filter: contrast(0.8);
+    
+        }
     }
 }
 
