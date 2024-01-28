@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './burger-menu.component.scss'
 })
 export class BurgerMenuComponent {
+  closeMenu(){
+    document.getElementById('burger-menu')?.classList.add('app-burger-menu-closed')
+  }
 
+  doNotCloseMenu(event: any){
+    event.stopPropagation();
+  }
 }

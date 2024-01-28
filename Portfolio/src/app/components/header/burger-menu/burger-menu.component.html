@@ -1,12 +1,12 @@
 <div class="burger-menu montserrat">
     <div class="menu-head">
         <img src="assets/img/logo.png" alt="">
-        <div class="close-menu">X</div>
+        <div (click)="closeMenu()" class="close-menu">X</div>
     </div>
     <div class="spans montserrat">
-        <a href="#about-me">About me</a>
-        <a href="#skill-set" class="span-short">Skill set</a>
-        <a href="#my-work">My work</a>
-        <a href="#contact">Contact</a>
+        <a (click)="closeMenu()" href="#about-me">About me</a>
+        <a (click)="closeMenu()" href="#skill-set" class="span-short">Skill set</a>
+        <a (click)="closeMenu()" href="#my-work">My work</a>
+        <a (click)="closeMenu()" href="#contact">Contact</a>
     </div>
 </div>

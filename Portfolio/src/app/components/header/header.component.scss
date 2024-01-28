@@ -96,6 +96,30 @@ app-navbar{
     width: 768px;
 }
 
+.burger-menu-when-closed{
+    z-index: 100;
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    margin: 37px 25px;
+    align-items: center;
+}
+
+.logo-img{
+    width: 64px;
+    height: auto;
+}
+
+.menu-img{
+    width: 28px;
+    height: auto;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
 @media (max-width: 1500px) {
     .links{
         display: none;
@@ -130,6 +154,10 @@ app-navbar{
 }
 
 @media (max-width: 900px){
+    .burger-menu-when-closed{
+        display: flex;
+    }
+
     .header-component{
         height: 1168px;
     }
@@ -167,13 +195,18 @@ app-navbar{
         padding: 37px 25px;
         border-bottom-left-radius: 10px;
         border-top-left-radius: 0px;
+        transition: right 1s ease;
+    }
+
+    .app-burger-menu-closed{
+        right: -600px;
     }
 
 }
 
 @media (max-width: 600px){
     .header-component{
-        height: 600px;
+        height: 750px;
     }
     .div-portait{
         margin-top: -305px;
@@ -182,11 +215,12 @@ app-navbar{
     .portait{
         height: 375px;
         width: 320px;
+        padding-right: 110px;
     }
 
     .spans{
         margin-bottom: 145px;
-        margin-top: 50px;
+        margin-top: 200px;
     }    
 
     .name{
@@ -202,7 +236,17 @@ app-navbar{
         height: 103px !important;
         width: 103px !important;
         left: calc(50% - 51.5px) !important;
-        top: 548.5px !important;
+        top: 698.5px !important;
+    }
+
+    .ellipse-big{
+        height: 792px !important;
+        width: 792px !important;
+        margin-top: -280px !important;
+    }
+
+    app-burger-menu{
+        width: 100%;
     }
 
 }

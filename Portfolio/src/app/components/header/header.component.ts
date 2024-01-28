@@ -10,5 +10,11 @@ import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-
+  openMenu(){
+    document.getElementById('burger-menu')?.classList.remove('app-burger-menu-closed')
+  }
+  
+  doNotCloseMenu(event: any){
+    event.stopPropagation();
+  }
 }

@@ -1,9 +1,9 @@
 <form class="montserrat" (submit)="sendMail()" ngNativeValidate #myForm>
     <input placeholder="Your name" required type="text" name="name" #nameField>
-    <input placeholder="Your email" required type="text" name="mail" #mailField>
+    <input placeholder="Your email" required type="email" name="mail" #mailField>
     <textarea placeholder="Your message" required name="message" type="text" rows="11" #messageField></textarea>
     <div class="checkbox-area">
-        <input type="checkbox">
+        <input type="checkbox" required>
         <div>
             I've read the <a href="privacy-policy"><span class="privacy-policy">privacy policy</span></a> and agree to the processing of my data as outlined
         </div>

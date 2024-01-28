@@ -14,5 +14,7 @@ import { FooterComponent } from '../footer/footer.component';
   styleUrl: './main-content.component.scss'
 })
 export class MainContentComponent {
-
+  closeMenu(){
+    document.getElementById('burger-menu')?.classList.add('app-burger-menu-closed')
+  }
 }
