@@ -1,4 +1,9 @@
 <app-navbar></app-navbar>
+<div class="burger-menu-when-closed">
+    <a href="#header"><img class="logo-img" src="assets/img/logo/logo_white.png" alt=""></a>
+    <img (click)="openMenu(); doNotCloseMenu($event)"  class="menu-img" src="assets/img/buttons/burger-menu.png" alt="">
+</div>
+<app-burger-menu (click)="doNotCloseMenu($event)" id="burger-menu" class="app-burger-menu-closed"></app-burger-menu>
 <img class="ellipse-big" src="assets/img/ellipse.png">
 <div class="div-impressum">
     <h1>Impressum</h1>

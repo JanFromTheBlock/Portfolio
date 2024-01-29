@@ -7,7 +7,7 @@ app-navbar {
     max-width: 1800px;
 }
 
-img {
+.ellipse-big {
     width: 396px;
     height: 396px;
     position: absolute;
@@ -28,10 +28,35 @@ img {
     max-width: 1800px;
 }
 
+.burger-menu-when-closed {
+    z-index: 100;
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    margin: 37px 25px;
+    align-items: center;
+}
+
+.logo-img {
+    height: 69px;
+    width: auto;
+}
+
+.menu-img {
+    width: 28px;
+    height: auto;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 
 
 @media(max-width: 1500px) {
-    img {
+    .ellipse-big {
         display: none;
     }
 
@@ -48,6 +73,28 @@ img {
 app-navbar{
     display: none;
 }
+
+.burger-menu-when-closed{
+    display: flex;
+}
+
+app-burger-menu {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    background: linear-gradient(#FFFFFF, #D7FFEC);
+    padding: 37px 25px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 0px;
+    transition: right 1s ease;
+}
+
+.app-burger-menu-closed{
+    right: -600px;
+}
+
 }
 
 @media(max-width: 600px){
@@ -61,6 +108,10 @@ app-navbar{
 
     h3{
         font-size: 20px;
+    }
+
+    app-burger-menu{
+        width: 100%;
     }
 }
 
