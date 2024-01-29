@@ -1,4 +1,4 @@
-.footer{
+.footer {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -6,29 +6,33 @@
     align-items: center;
 }
 
-.footer-imgs{
+.footer-imgs {
     display: flex;
     gap: 42px;
 }
-.margin-right{
+
+.margin-right {
     margin-right: -110px;
 }
 
-.button-white:hover{
+.button-white:hover {
     transform: scale(1.5);
     cursor: pointer;
 }
 
-.logo:hover{
-    cursor: pointer;
+.logo {
+    height: 69px;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
-.impressum{
+.impressum {
     position: relative;
     display: block;
 }
 
-.impressum::after{
+.impressum::after {
     content: "";
     position: absolute;
     left: calc(50% - 28.5px);
@@ -39,33 +43,33 @@
     transition: width 0.3s ease;
 }
 
-.impressum:hover::after{
+.impressum:hover::after {
     width: 60%;
 }
 
-a{
+a {
     text-decoration: none;
     color: unset;
 }
 
 @media (max-width: 1500px) {
-    .margin-right{
+    .margin-right {
         margin-right: 0;
     }
 
-    .impressum{
+    .impressum {
         margin-left: -100px;
     }
 }
 
-@media (max-width: 900px){
-    .footer{
+@media (max-width: 900px) {
+    .footer {
         flex-direction: column;
         align-items: center;
         gap: 23px;
     }
 
-    .impressum{
+    .impressum {
         margin-left: 0;
         margin-top: 23px;
     }

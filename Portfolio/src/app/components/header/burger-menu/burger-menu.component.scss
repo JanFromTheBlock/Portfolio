@@ -2,6 +2,11 @@
     display: none;
 }
 
+img{
+    height: 69px;
+    width: auto;
+}
+
 a{
     color: rgba(87, 232, 162, 1);
     text-decoration: none;
@@ -17,6 +22,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 50px;
 }
 
 .close-menu{

@@ -14,6 +14,7 @@ export class FormularComponent {
   @ViewChild('nameField') nameField!: ElementRef;
   @ViewChild('messageField') messageField!: ElementRef;
   @ViewChild('sendButton') sendButton!: ElementRef;
+  @ViewChild('mailField') mailField!: ElementRef;
 
   constructor(){ }
 
@@ -22,15 +23,18 @@ export class FormularComponent {
     let nameField = this.nameField.nativeElement
     let messageField = this.messageField.nativeElement
     let sendButton = this.sendButton.nativeElement
+    let mailField = this.mailField.nativeElement
     nameField.disabled = true;
     messageField.disabled = true;
     sendButton.disabled = true;
+    mailField.disabled = true;
 
     let fd = new FormData();
     fd.append('name', nameField.value);
     fd.append('message', messageField.value);
+    fd.append('mail', mailField.value);
     //senden
-    await fetch('http://janborcholt.de/send_mail/send_mail.php',{
+    await fetch('https://janborcholt.de/send_mail/send_mail.php',{
       method: 'POST',
       body: fd,
     })
@@ -38,6 +42,7 @@ export class FormularComponent {
     nameField.disabled = false;
     messageField.disabled = false;
     sendButton.disabled = false;
+    mailField.disabled = false;
     
   }
 }
