@@ -87,6 +87,13 @@ app-navbar {
     }
 }
 
+@media(max-width: 750px){
+    .ellipse-big{
+        left: calc(-10% - 446px);
+        top: -100px;
+    }
+}
+
 @media(max-width: 600px){
     app-burger-menu{
         width: 100%;
