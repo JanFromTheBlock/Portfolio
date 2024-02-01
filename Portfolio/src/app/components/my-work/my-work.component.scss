@@ -1,3 +1,7 @@
+a{
+    text-decoration: none;
+}
+
 .title {
     font-size: 120px;
     color: #57e8a2;
@@ -21,6 +25,7 @@
         max-width: 281px;
         animation-name: button-hover;
         animation-duration: 1s;
+        cursor: pointer;
     }
 }
 

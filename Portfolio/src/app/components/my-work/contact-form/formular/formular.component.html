@@ -10,6 +10,6 @@
     </div>
     
     <div class="div-button justi-cent">
-        <button class="button" #sendButton>Say hello</button>
+        <button type="submit" class="button" [disabled]="!ngForm.valid" #sendButton>Say hello</button>
     </div>
 </form>

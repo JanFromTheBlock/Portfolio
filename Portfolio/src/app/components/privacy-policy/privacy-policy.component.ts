@@ -10,6 +10,11 @@ import { BurgerMenuComponent } from '../header/burger-menu/burger-menu.component
   styleUrl: './privacy-policy.component.scss'
 })
 export class PrivacyPolicyComponent {
+
+  constructor(){
+    window.scrollTo(0, 0)
+  }
+
   openMenu(){
     document.getElementById('burger-menu')?.classList.remove('app-burger-menu-closed')
   }

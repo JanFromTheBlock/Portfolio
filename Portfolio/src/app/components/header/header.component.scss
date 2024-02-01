@@ -190,7 +190,7 @@ app-navbar{
         position: absolute;
         top: 0;
         right: 0;
-        width: 250px;
+        width: 100%;
         background: linear-gradient(#FFFFFF, #D7FFEC);
         padding: 37px 25px;
         border-bottom-left-radius: 10px;
@@ -199,7 +199,7 @@ app-navbar{
     }
 
     .app-burger-menu-closed{
-        right: -600px;
+        right: -900px;
     }
 
 }
@@ -243,10 +243,6 @@ app-navbar{
         height: 792px !important;
         width: 792px !important;
         margin-top: -280px !important;
-    }
-
-    app-burger-menu{
-        width: 100%;
     }
 
 }
