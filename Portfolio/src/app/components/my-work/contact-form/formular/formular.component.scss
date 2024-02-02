@@ -87,7 +87,7 @@ form {
     max-width: 261px;
     box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.15);
 
-    &:hover {
+    &:enabled:hover {
         padding: 20px 40px;
         color: white;
         background: radial-gradient(#57E8A2, #33B476);
@@ -95,6 +95,8 @@ form {
         animation-name: button-hover;
         animation-duration: 1s;
     }
+
+    
 }
 
 @keyframes button-hover {

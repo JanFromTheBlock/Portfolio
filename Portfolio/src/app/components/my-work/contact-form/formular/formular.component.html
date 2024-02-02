@@ -1,12 +1,28 @@
-<form class="montserrat" (submit)="sendMail()" ngNativeValidate #myForm="ngForm">
-    <input placeholder="Your name" required type="text" name="name" #nameField>
-    <input placeholder="Your email" required type="email" name="mail" #mailField>
-    <textarea placeholder="Your message" required name="message" type="text" rows="11" #messageField></textarea>
+<form class="montserrat" (submit)="sendMail()" #myForm="ngForm">
+
+    <input placeholder="Your name" required type="text" ngModel #name="ngModel" name="name">
+    @if (!name.valid && name.touched) {
+        <span>Please enter your name</span>
+    }
+
+    <input placeholder="Your email" required type="email" ngModel #mail="ngModel" name="mail">
+    @if (!mail.valid && mail.touched) {
+        <span>Please enter your email</span>
+    }
+
+    <textarea placeholder="Your message" required name="message" type="text" rows="11" ngModel #messageField="ngModel"></textarea>
+    @if (!messageField.valid && messageField.touched) {
+        <span>Please enter your message</span>
+    }
+
     <div class="checkbox-area">
-        <input type="checkbox" required>
+        <input type="checkbox" required ngModel #checkbox="ngModel" name="checkbox">
         <div>
             I've read the <a routerLink="/privacy-policy"><span class="privacy-policy">privacy policy</span></a> and agree to the processing of my data as outlined
         </div>
+        @if (!checkbox.valid && checkbox.touched) {
+            <span>Please enter accept the privacy policy</span>
+        }
     </div>
     
     <div class="div-button justi-cent">
