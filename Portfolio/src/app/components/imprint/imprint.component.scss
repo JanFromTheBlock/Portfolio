@@ -99,3 +99,14 @@ app-navbar {
         width: 100%;
     }
 }
+
+@media (max-height: 1000px){
+    .ellipse-big{
+        width: unset;
+        height: unset;
+    }
+
+    .div-impressum{
+        min-height: 500px;
+    }
+}

@@ -1,4 +1,4 @@
-<form class="montserrat" (submit)="sendMail()" ngNativeValidate #myForm>
+<form class="montserrat" (submit)="sendMail()" ngNativeValidate #myForm="ngForm">
     <input placeholder="Your name" required type="text" name="name" #nameField>
     <input placeholder="Your email" required type="email" name="mail" #mailField>
     <textarea placeholder="Your message" required name="message" type="text" rows="11" #messageField></textarea>
@@ -10,6 +10,6 @@
     </div>
     
     <div class="div-button justi-cent">
-        <button type="submit" class="button" [disabled]="!ngForm.valid" #sendButton>Say hello</button>
+        <button type="submit" class="button" [disabled]="!myForm.valid" #sendButton>Say hello</button>
     </div>
 </form>

@@ -1,4 +1,4 @@
-a{
+a {
     text-decoration: none;
 }
 
@@ -41,11 +41,10 @@ a{
         color: white;
         padding: 16px 28px;
         max-width: 275px;
-        background: linear-gradient(
-            to bottom,
-            #57E8A2 100%,
-            #33B476 33%,
-          )
+        background: linear-gradient(to bottom,
+                #57E8A2 100%,
+                #33B476 33%,
+            )
     }
 
     66% {
@@ -95,8 +94,6 @@ a{
     justify-content: center;
     align-items: end;
     transition-property: align-items;
-    transition-delay: 5s;
-    transition-duration: 5s;
 
 
     >img {
@@ -162,52 +159,54 @@ a{
     justify-content: center;
 }
 
-.button-area{
+.button-area {
     display: flex;
 }
 
-.div-mobile-btn{
+.div-mobile-btn {
     display: none;
     justify-content: flex-end;
 }
 
-.mobile-btn{
+.mobile-btn {
     color: white !important;
     background-color: #57e8a2 !important;
 }
 
 @media (max-width: 1500px) {
-    .my-work{
+    .my-work {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-bottom: 0;
     }
-    .examples{
+
+    .examples {
         flex-direction: column;
         align-items: center;
     }
-    .margin-left{
+
+    .margin-left {
         margin-left: 0;
     }
 
-    .margin-right{
+    .margin-right {
         flex-direction: column-reverse !important;
         margin-left: 0;
     }
 
-    .text{
+    .text {
         margin-top: 45px;
         text-align: center;
         gap: 20px;
         align-items: unset;
     }
 
-    .div-mobile-btn{
+    .div-mobile-btn {
         display: flex;
     }
 
-    .justi-end{
+    .justi-end {
         justify-content: flex-start;
     }
 
@@ -216,67 +215,69 @@ a{
 @media (min-width: 900px) {
     .flex-img:hover {
         align-items: start;
+        transition-duration: 500ms;
 
-        > img {
+        >img {
             align-items: start;
             transform: scale(1.1, 1.1);
+            transition-duration: 500ms;
         }
     }
 }
 
-@media (max-width: 900px){
-    .flex-img{
+@media (max-width: 900px) {
+    .flex-img {
         height: unset;
         width: unset;
-        
-        >img{
+
+        >img {
             width: 90%;
             aspect-ratio: 620/393;
             height: auto;
         }
     }
 
-    .head{
+    .head {
         width: 90%;
     }
 
-    .text{
+    .text {
         width: 90%;
     }
 
-    .my-work{
+    .my-work {
         padding: 0;
     }
 
-    .title{
+    .title {
         font-size: 100px;
     }
 
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
 
-    .title{
+    .title {
         font-size: 64px;
     }
 
-    .head{
+    .head {
         max-width: 300px;
         margin: 0 10px 40px 10px;
 
-        >span{
-        font-size: 16px;
+        >span {
+            font-size: 16px;
         }
     }
 
-    .flex-img{
+    .flex-img {
         max-width: 320px;
     }
 
-    .text{
+    .text {
         max-width: 300px;
         margin: 45px 10px 0 10px;
     }
 
-    
+
 }
