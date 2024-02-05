@@ -10,48 +10,62 @@ import { RouterLink } from '@angular/router';
   styleUrl: './formular.component.scss'
 })
 export class FormularComponent {
-  @ViewChild('myform') myForm?: NgForm
+  @ViewChild('myForm') myForm?: NgForm
+  isSending = false;
+  emailSent = false;
+  isError = false;
 
- // @ViewChild('myForm') myForm!: ElementRef;
-  // @ViewChild('nameField') nameField!: ElementRef;
-  // @ViewChild('messageField') messageField!: ElementRef;
-  // @ViewChild('sendButton') sendButton!: ElementRef;
-  // @ViewChild('mailField') mailField!: ElementRef;
-// ngForm: any;
+  constructor() { }
 
-  constructor(){ }
-
-  async sendMail(){
+  async sendMail() {
     console.log('Sending Mail', this.myForm);
     let fd = new FormData();
-    console.log(this.myForm?.value.name)
+    console.log(this.myForm?.value.name);
 
-    fd.append('name', this.myForm?.value.name)
+    fd.append('name', this.myForm?.value.name);
+    fd.append('email', this.myForm?.value.email);
+    fd.append('message', this.myForm?.value.message);
+
+    this.isSending = true;
+    try{
+      await fetch('https://janborcholt.de/send_mail/send_mail.php', {
+        method: 'POST',
+        body: fd,
+      });
+      this.emailSent = true;
+    }catch (error) {
+      this.isError = true;
+    }finally{
+      if (this.emailSent) {
+        this.responseToMail('succes');
+      }else if (this.isError) {
+        this.responseToMail('error');
+      }
+      setTimeout(() => {
+        this.isSending = false;
+        this.isError = false;
+        this.emailSent = false;
+      }, 2000);
+    }
+   
 
     this.myForm?.reset();
-    // let nameField = this.nameField.nativeElement
-   //  let messageField = this.messageField.nativeElement
-   // let sendButton = this.sendButton.nativeElement
-   //  let mailField = this.mailField.nativeElement
-    // nameField.disabled = true;
-    // messageField.disabled = true;
-    // sendButton.disabled = true;
-    // mailField.disabled = true;
+  }
 
-    //let fd = new FormData();
-    //fd.append('name', nameField.value);
-    //fd.append('message', messageField.value);
-    //fd.append('mail', mailField.value);
-    //senden
-    //await fetch('https://janborcholt.de/send_mail/send_mail.php',{
-    //  method: 'POST',
-    //  body: fd,
-   // })
+  responseToMail(text: string){
+    let sendMailResponse = document.getElementById('sendMailResponse');
+    if (sendMailResponse) {
+      sendMailResponse.classList.remove('d-none');
+    }
+    document.getElementById(text)?.classList.remove('d-none');    
+  }
 
-    // nameField.disabled = false;
-    // messageField.disabled = false;
-    // sendButton.disabled = false;
-    // mailField.disabled = false;
-    
+  closeDialog(){
+    let sendMailResponse = document.getElementById('sendMailResponse');
+    if (sendMailResponse) {
+      sendMailResponse.classList.add('d-none');
+    }
+    document.getElementById('succes')?.classList.add('d-none'); 
+    document.getElementById('error')?.classList.add('d-none'); 
   }
 }

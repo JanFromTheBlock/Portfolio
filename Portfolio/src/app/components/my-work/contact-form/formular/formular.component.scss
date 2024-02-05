@@ -137,6 +137,32 @@ a{
     text-decoration: none;
 }
 
+#sendMailResponse{
+    position: fixed;
+    z-index: 200;
+    top: 25%;
+    left: calc(50% - 244px);
+    font-size: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    background: white;
+    border: 1px solid #57E8A2;
+    padding: 100px 100px;
+    border-radius: 20px;
+    color: black;
+    font-weight: 800;
+}
+.button-div-window{
+    width: 100px;
+    height: 70px;
+}
+
+.d-none{
+    display: none !important;
+}
+
 
 
 .checkbox-area{

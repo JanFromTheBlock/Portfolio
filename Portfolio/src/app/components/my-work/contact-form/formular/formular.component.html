@@ -1,31 +1,29 @@
 <form class="montserrat" (submit)="sendMail()" #myForm="ngForm">
 
-    <input placeholder="Your name" required type="text" ngModel #name="ngModel" name="name">
-    @if (!name.valid && name.touched) {
-        <span>Please enter your name</span>
-    }
+    <input [disabled]="isSending" placeholder="Your name" required type="text" ngModel #name="ngModel" name="name">
 
-    <input placeholder="Your email" required type="email" ngModel #mail="ngModel" name="mail">
-    @if (!mail.valid && mail.touched) {
-        <span>Please enter your email</span>
-    }
+    <input [disabled]="isSending" placeholder="Your email" required type="email" ngModel #mail="ngModel" name="mail">
 
-    <textarea placeholder="Your message" required name="message" type="text" rows="11" ngModel #messageField="ngModel"></textarea>
-    @if (!messageField.valid && messageField.touched) {
-        <span>Please enter your message</span>
-    }
+    <textarea [disabled]="isSending" placeholder="Your message" required name="message" type="text" rows="11" ngModel
+        #messageField="ngModel"></textarea>
 
     <div class="checkbox-area">
-        <input type="checkbox" required ngModel #checkbox="ngModel" name="checkbox">
+        <input [disabled]="isSending" type="checkbox" required ngModel #checkbox="ngModel" name="checkbox">
         <div>
-            I've read the <a routerLink="/privacy-policy"><span class="privacy-policy">privacy policy</span></a> and agree to the processing of my data as outlined
+            I've read the <a routerLink="/privacy-policy"><span class="privacy-policy">privacy policy</span></a> and
+            agree to the processing of my data as outlined
         </div>
-        @if (!checkbox.valid && checkbox.touched) {
-            <span>Please enter accept the privacy policy</span>
-        }
     </div>
-    
+
     <div class="div-button justi-cent">
         <button type="submit" class="button" [disabled]="!myForm.valid" #sendButton>Say hello</button>
     </div>
 </form>
+
+<div class=" montserrat d-none" id="sendMailResponse">
+    <div class="d-none" id="error">The email sending failed</div>
+    <div class="d-none" id="succes">The email was sent successfully</div>
+    <div class="button-div-window">
+        <button (click)="closeDialog()"  class="button">ok</button>
+    </div>
+</div>
