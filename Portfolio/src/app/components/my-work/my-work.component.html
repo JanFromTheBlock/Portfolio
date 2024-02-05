@@ -4,8 +4,22 @@
             <div class=" title baloo">My work</div>
             <span class="montserrat">This page is a sample of my work - please feel free to try them out</span>
         </div>
+        <div class="filter-buttons">
+            <div class="div-button-all">
+                <button (click)="filterWork(all, 'all')" id="button-all" class="button active">All</button>
+            </div>
+            <div class="div-button-javascript">
+                <button (click)="filterWork(javascript, 'javascript')" id="button-javascript" class="button">JavaScript</button>
+            </div>
+            <div class="div-button-angular">
+                <button (click)="filterWork(angular, 'angular')" id="button-angular" class="button">Angular</button>
+            </div>
+            <div class="div-button-firebase">
+                <button (click)="filterWork(firebase, 'firebase')" id="button-firebase" class="button">Firebase</button>
+            </div>
+        </div>
         <div class="example-area">
-            <div class="examples margin-left">
+            <div class="examples margin-left" id="el-pollo-loco">
                 <a target="_blank" rel="noopener noreferrer"
                     href="https://janborcholt.de/projects/El_Pollo_Loco/index.html">
                     <div class="flex-img">
@@ -35,7 +49,7 @@
                 </div>
             </div>
 
-            <div class="examples margin-right">
+            <div class="examples margin-right" id="join">
 
                 <div class="text text-end">
                     <h1 class="baloo">Join</h1>

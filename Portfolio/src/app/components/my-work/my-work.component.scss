@@ -7,6 +7,10 @@ a {
     color: #57e8a2;
 }
 
+.d-none{
+    display: none !important;
+}
+
 .button {
     font-family: "montserrat", Arial, Helvetica, sans-serif;
     color: #57E8A2;
@@ -173,6 +177,48 @@ a {
     background-color: #57e8a2 !important;
 }
 
+.div-button-all {
+    width: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.div-button-javascript {
+    height: 70px;
+    width: 195px;
+    display: flex;
+    justify-content: center;
+}
+
+.div-button-angular {
+    height: 70px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+}
+
+.div-button-firebase {
+    height: 70px;
+    width: 175px;
+    display: flex;
+    justify-content: center;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.active {
+    padding: 20px 40px;
+    color: white;
+    background: radial-gradient(#57E8A2, #33B476);
+    max-width: 281px;
+}
+
 @media (max-width: 1500px) {
     .my-work {
         display: flex;
@@ -251,6 +297,15 @@ a {
 
     .title {
         font-size: 100px;
+    }
+
+    .filter-buttons {
+        flex-wrap: wrap;
+        row-gap: 40px;
+
+        >div {
+            width: 50%;
+        }
     }
 
 }
