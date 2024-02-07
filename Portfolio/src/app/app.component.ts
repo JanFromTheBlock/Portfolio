@@ -17,4 +17,8 @@ import { MainContentComponent } from './components/main-content/main-content.com
 })
 export class AppComponent {
   title = 'Portfolio';
+  
+
 }
+
+

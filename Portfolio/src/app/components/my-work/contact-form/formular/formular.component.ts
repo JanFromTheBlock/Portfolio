@@ -57,7 +57,8 @@ export class FormularComponent {
     if (sendMailResponse) {
       sendMailResponse.classList.remove('d-none');
     }
-    document.getElementById(text)?.classList.remove('d-none');    
+    document.getElementById(text)?.classList.remove('d-none');  
+    document.getElementById('background-senMailResponse')?.classList.remove('d-none');   
   }
 
   closeDialog(){
@@ -67,5 +68,6 @@ export class FormularComponent {
     }
     document.getElementById('succes')?.classList.add('d-none'); 
     document.getElementById('error')?.classList.add('d-none'); 
+    document.getElementById('background-senMailResponse')?.classList.add('d-none'); 
   }
 }

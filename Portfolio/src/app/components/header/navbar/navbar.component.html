@@ -1,12 +1,14 @@
 <div class="navbar montserrat">
     <div>
-        <a href="#header">
+        <a href="#header" (click)="translateToGerman()">
             <img src="assets/img/logo/logo_white.png" alt="">
         </a>
     </div>
     <div class="spans">
-        <a href="#about-me">About me</a>
-        <a href="#skill-set" class="span-short">Skill set</a>
-        <a href="#my-work">My work</a>
+        <a id="about-me-button" href="#about-me">About me</a>
+        <a id="skill-set-button" href="#skill-set" class="span-short">Skill set</a>
+        <a id="my-work-button" href="#my-work">My work</a>
+        <a class="d-none" id="language-british" href=""><img class="language" (click)="translateToEnglish()" src="/assets/img/languages/british.png"></a>
+        <a id="language-german"  href=""><img class="language"  (click)="translateToGerman()" src="/assets/img/languages/german.png"></a>
     </div>
 </div>

@@ -4,9 +4,12 @@
         <div (click)="closeMenu()" class="close-menu">X</div>
     </div>
     <div class="spans montserrat">
-        <a (click)="closeMenu()" href="#about-me">About me</a>
-        <a (click)="closeMenu()" href="#skill-set" class="span-short">Skill set</a>
-        <a (click)="closeMenu()" href="#my-work">My work</a>
-        <a (click)="closeMenu()" href="#contact">Contact</a>
+        <a (click)="closeMenu()" id="burger-about-me-button" href="#about-me">About me</a>
+        <a (click)="closeMenu()" id="burger-skill-set-button"  href="#skill-set" class="span-short">Skill set</a>
+        <a (click)="closeMenu()" id="burger-my-work-button" href="#my-work">My work</a>
+        <a (click)="closeMenu()" id="burger-contact-button" href="#contact">Contact</a>
+        <a class="d-none language-a" id="language-british-burger" href=""><img class="language" (click)="translateToEnglish()" src="/assets/img/languages/british.png"></a>
+        <a class="language-a" id="language-german-burger"  href=""><img class="language"  (click)="translateToGerman()" src="/assets/img/languages/german.png"></a>
+    
     </div>
 </div>

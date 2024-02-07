@@ -18,6 +18,31 @@ a{
     }
 }
 
+.d-none{
+    display: none !important;
+}
+
+.language-a{
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.language{
+    height: 40px;
+    width: auto;
+    filter: brightness(0.9);
+
+    &:hover{
+        width: 48px;
+        height: 48px;
+        filter: brightness(1.1);
+    }
+}
+
 .menu-head {
     display: flex;
     justify-content: space-between;

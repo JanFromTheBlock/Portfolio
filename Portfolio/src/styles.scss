@@ -31,6 +31,23 @@ body {
     align-items: start;
 }
 
+#language-img{
+    height: 40px;
+    width: auto;
+}
+
+.privacy-policy{
+    color: #00bc8f;
+    width: 105px;
+    margin-left: 5px;
+
+    &:hover {
+        font-weight: 700;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
 .justi-end {
     justify-content: end;
 }

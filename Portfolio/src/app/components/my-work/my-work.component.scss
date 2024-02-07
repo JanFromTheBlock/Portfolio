@@ -312,8 +312,16 @@ a {
 
 @media (max-width: 600px) {
 
+    .filter-buttons{
+        margin-top: 50px;
+    }
+
     .title {
         font-size: 64px;
+    }
+
+    .div-button{
+        width: 140px;
     }
 
     .head {

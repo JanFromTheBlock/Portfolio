@@ -9,11 +9,13 @@
 
 .spans{
     display: flex;
+    align-items: center;
     gap: 36px;
     font-size: 24px;
+    height: 48px;
 
         >a{
-            width: 128px;
+            width: 133px;
             display: flex;
             justify-content: flex-start;
             color: #57E8A2;
@@ -25,6 +27,29 @@
             }
         }
         
+}
+
+.language-a{
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    display: flex;
+}
+
+.language{
+    height: 40px;
+    width: auto;
+    filter: brightness(0.9);
+
+    &:hover{
+        width: 48px;
+        height: 48px;
+        filter: brightness(1.1);
+    }
+}
+
+.d-none{
+    display: none !important;
 }
 
 .span-short{
@@ -42,7 +67,7 @@ img{
 
 @media (max-width: 1500px) {
     .navbar{
-        max-width: 600px;
+        max-width: 750px;
     }
 
     a{

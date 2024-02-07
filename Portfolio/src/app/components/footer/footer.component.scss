@@ -32,7 +32,18 @@
     display: block;
 }
 
-.impressum::after {
+#imprint-text1::after {
+    content: "";
+    position: absolute;
+    left: calc(50% - 15px);
+    bottom: -6px;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+#imprint-text2::after {
     content: "";
     position: absolute;
     left: calc(50% - 28.5px);
@@ -43,7 +54,11 @@
     transition: width 0.3s ease;
 }
 
-.impressum:hover::after {
+#imprint-text1:hover::after {
+    width: 40%;
+}
+
+#imprint-text2:hover::after {
     width: 60%;
 }
 
@@ -55,6 +70,10 @@ a {
 @media (max-width: 1500px) {
     .margin-right {
         margin-right: 0;
+    }
+
+    #imprint-text1::after{
+        left: calc(50% - 40px);
     }
 
     .impressum {
@@ -72,5 +91,9 @@ a {
     .impressum {
         margin-left: 0;
         margin-top: 23px;
+    }
+
+    #imprint-text1::after{
+        left: calc(50% - 15px);
     }
 }

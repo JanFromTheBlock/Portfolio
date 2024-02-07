@@ -17,7 +17,7 @@ app-navbar {
     ;
 }
 
-.privacy-policy {
+.privacy-policy-body {
     margin: 200px 100px;
     display: flex;
     flex-direction: column;
@@ -68,7 +68,7 @@ app-navbar {
 }
 
 @media(max-width: 900px){
-.privacy-policy{
+.privacy-policy-body{
     margin-right: 10px;
     margin-left: 10px;
 }
