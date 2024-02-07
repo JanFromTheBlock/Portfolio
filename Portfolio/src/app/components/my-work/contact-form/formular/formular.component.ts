@@ -18,12 +18,10 @@ export class FormularComponent {
   constructor() { }
 
   async sendMail() {
-    console.log('Sending Mail', this.myForm);
     let fd = new FormData();
-    console.log(this.myForm?.value.name);
 
     fd.append('name', this.myForm?.value.name);
-    fd.append('email', this.myForm?.value.email);
+    fd.append('email', this.myForm?.value.mail);
     fd.append('message', this.myForm?.value.message);
 
     this.isSending = true;

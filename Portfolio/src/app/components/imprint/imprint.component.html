@@ -1,21 +1,41 @@
 <app-navbar></app-navbar>
 <div class="burger-menu-when-closed">
     <a href="#header"><img class="logo-img" src="assets/img/logo/logo_white.png" alt=""></a>
-    <img (click)="openMenu(); doNotCloseMenu($event)"  class="menu-img" src="assets/img/buttons/burger-menu.png" alt="">
+    <img (click)="openMenu(); doNotCloseMenu($event)" class="menu-img" src="assets/img/buttons/burger-menu.png" alt="">
 </div>
 <app-burger-menu (click)="doNotCloseMenu($event)" id="burger-menu" class="app-burger-menu-closed"></app-burger-menu>
 <img class="ellipse-big" src="assets/img/ellipse.png">
-<div class="div-impressum">
+<div class="div-impressum d-none" id="impressum-german">
     <h1>Impressum</h1>
 
-<h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
-<p>Jan Borcholt<br />
-Stettiner Stra&szlig;e 53<br />
-13357 Berlin</p>
+    <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
+    <p>Jan Borcholt<br />
+        Stettiner Stra&szlig;e 53<br />
+        13357 Berlin</p>
 
-<h2>Kontakt</h2>
-<p>Telefon: +49 170 8710755;<br /> E-Mail: janborcholt&#64;web.de</p>
+    <h2>Kontakt</h2>
+    <p>Telefon: +49 170 8710755;<br /> E-Mail: janborcholt&#64;web.de</p>
 
-<p>Quelle: <a href="https://www.e-recht24.de/impressum-generator.html">https://www.e-recht24.de/impressum-generator.html</a></p>
+    <p>Quelle: <a
+            href="https://www.e-recht24.de/impressum-generator.html">https://www.e-recht24.de/impressum-generator.html</a>
+    </p>
+
+</div>
+
+<div class="div-impressum" id="impressum-english">
+    <h1>Imprint</h1>
+
+    <h2>
+        Entries referred to &sect; 5 TMG</h2>
+    <p>Jan Borcholt<br />
+        Stettiner Stra&szlig;e 53<br />
+        13357 Berlin</p>
+
+    <h2>Contact</h2>
+    <p>Phone: +49 170 8710755;<br /> E-mail: janborcholt&#64;web.de</p>
+
+    <p>Source: <a
+            href="https://www.e-recht24.de/impressum-generator.html">https://www.e-recht24.de/impressum-generator.html</a>
+    </p>
 
 </div>
