@@ -13,7 +13,6 @@ export class NavbarComponent {
   ids = ['about-me-button', 'my-work-button', 'burger-about-me-button', 'burger-my-work-button', 'burger-contact-button', 'header-span1', 'header-span3', 'about-me-title', 'about-me-text', 'button-about-me', 'my-work-title', 'my-work-text', 'button-all', 'el-pollo-loco-text', 'join-text', 'contact-title', 'contact-span1', 'contact-span2', 'contact-span3', 'formular-text', 'button-contact', 'error', 'succes', 'imprint-text'];
 
   translateToGerman() {
-    //location.reload();
     for (let index = 0; index < this.ids.length; index++) {
       const id = this.ids[index];
       const translation = this.german[index];
