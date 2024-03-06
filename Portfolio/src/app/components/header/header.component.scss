@@ -93,7 +93,8 @@ app-navbar{
 .portait{
     z-index: 99;
     height: 900px;
-    width: 768px;
+    width: auto;
+    padding: 0px 62.5px;
 }
 
 .burger-menu-when-closed{
@@ -140,6 +141,7 @@ app-navbar{
 
     .portait{
         margin-top: 200px;
+        padding: 0px 112px;
     }
 
     .spans{
@@ -164,7 +166,7 @@ app-navbar{
 
     .portait{
         height: 750px;
-        width: 640px;
+        padding: 0px 52px;
     }
 
     .name{
@@ -214,8 +216,8 @@ app-navbar{
 
     .portait{
         height: 375px;
-        width: 320px;
-        padding-right: 110px;
+        padding-right: 136px;
+        padding-left: 26px;
     }
 
     .spans{
