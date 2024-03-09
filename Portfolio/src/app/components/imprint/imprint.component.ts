@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FooterComponent } from '../footer/footer.component';
 import { NavbarComponent } from '../header/navbar/navbar.component';
 import { BurgerMenuComponent } from '../header/burger-menu/burger-menu.component';
+import { TranslationService } from '../../translation.service';
 
 @Component({
   selector: 'app-imprint',
@@ -11,11 +12,21 @@ import { BurgerMenuComponent } from '../header/burger-menu/burger-menu.component
   styleUrl: './imprint.component.scss'
 })
 export class ImprintComponent {
-  openMenu(){
+
+  germanTranslation = inject(TranslationService)
+
+  constructor() {
+  }
+
+  ngOnInit(){
+   this.germanTranslation.checkTranslation();
+  }
+
+  openMenu() {
     document.getElementById('burger-menu')?.classList.remove('app-burger-menu-closed')
   }
-  
-  doNotCloseMenu(event: any){
+
+  doNotCloseMenu(event: any) {
     event.stopPropagation();
   }
 }
