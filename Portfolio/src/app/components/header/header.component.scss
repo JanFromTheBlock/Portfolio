@@ -156,6 +156,7 @@ app-navbar{
 
     .ellipse-small{
         top: 1215px !important;
+        left: calc(20% - 103px) !important;
     }
 }
 
@@ -185,6 +186,10 @@ app-navbar{
 
     .ellipse-small{
         top: 1065px !important;
+        left: calc(15% - 51.5px) !important;
+        top: 1116.5px !important;
+        height: 103px !important;
+        width: 103px !important;
     }
 
     app-navbar{
@@ -239,10 +244,10 @@ app-navbar{
     }
 
     .ellipse-small{
-        height: 103px !important;
-        width: 103px !important;
-        left: calc(50% - 51.5px) !important;
-        top: 698.5px !important;
+        height: 51.5px !important;
+        width: 51.5px !important;
+        left: calc(15% - 26.25px) !important;
+        top: 724.75px !important;
     }
 
     .ellipse-big{
