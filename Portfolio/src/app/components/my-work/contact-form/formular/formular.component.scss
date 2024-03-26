@@ -13,12 +13,14 @@ form {
 
         &:hover {
             border: 3px solid #57e8a2;
-            ;
+            padding: 14px 25px;
             margin-bottom: -2px;
         }
 
         &:focus {
             outline: 3px solid #57e8a2 !important;
+            padding: 14px 25px;
+            margin-bottom: -2px;
 
             &:hover {
                 border: 1px solid #57e8a2;
@@ -48,12 +50,14 @@ form {
 
         &:hover {
             border: 3px solid #57e8a2;
-            ;
+            padding: 14px 25px;
             margin-bottom: -2px;
         }
 
         &:focus {
             outline: 3px solid #57e8a2 !important;
+            padding: 14px 25px;
+            margin-bottom: -2px;
 
             &:hover {
                 border: 1px solid #57e8a2;

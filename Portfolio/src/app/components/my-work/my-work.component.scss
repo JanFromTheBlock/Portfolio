@@ -113,6 +113,7 @@ a {
         height: 393px;
         box-shadow: 5px 5px 15px 0 rgba($color: #000000, $alpha: 0.15);
         pointer-events: auto;
+        transition-duration: 500ms;
     }
 }
 
@@ -274,7 +275,6 @@ a {
 
 @media (min-width: 900px) {
     .flex-img:hover {
-        align-items: start;
         transition-duration: 500ms;
 
         >img {
