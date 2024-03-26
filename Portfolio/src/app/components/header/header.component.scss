@@ -126,6 +126,14 @@ app-navbar{
     }
 }
 @media (max-width: 1500px) {
+
+    .ellipse-big{
+        width: 1200px !important;
+        height: 1200px !important;
+        margin-left: -1250px !important;
+        margin-top: -500px !important;
+    }
+
     .links{
         display: none;
     }
@@ -254,6 +262,7 @@ app-navbar{
         height: 792px !important;
         width: 792px !important;
         margin-top: -280px !important;
+        margin-left: -900px !important;
     }
 
 }
