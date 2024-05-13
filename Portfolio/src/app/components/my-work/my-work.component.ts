@@ -10,10 +10,10 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 })
 export class MyWorkComponent {
   categories = ['all', 'javascript', 'angular', 'firebase'];
-  all = ['el-pollo-loco', 'join', 'pokedex'];
-  javascript = ['el-pollo-loco', 'join', 'pokedex'];
-  angular = [];
-  firebase = [];
+  all = ['el-pollo-loco', 'join', 'pokedex', 'da-bubble'];
+  javascript = ['el-pollo-loco', 'join', 'pokedex', 'da-bubble'];
+  angular = ['da-bubble'];
+  firebase = ['da-bubble'];
 
 
   filterWork(array: any, title: any){
