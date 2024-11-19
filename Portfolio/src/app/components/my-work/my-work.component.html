@@ -1,141 +1,256 @@
 <div class="dflex" id="my-work">
-    <div class="my-work">
-        <div class="head">
-            <div id="my-work-title" class=" title baloo">My work</div>
-            <span id="my-work-text" class="montserrat">This page is a sample of my work - please feel free to try them out</span>
-        </div>
-        <img class="work-ellipse1" src="assets/img/ellipse.png" alt="">
-        <div class="filter-buttons d-none">
-            <div class="div-button-all">
-                <button (click)="filterWork(all, 'all')" id="button-all" class="button active">All</button>
-            </div>
-            <div class="div-button-javascript">
-                <button (click)="filterWork(javascript, 'javascript')" id="button-javascript" class="button">JavaScript</button>
-            </div>
-            <div class="div-button-angular">
-                <button (click)="filterWork(angular, 'angular')" id="button-angular" class="button">Angular</button>
-            </div>
-            <div class="div-button-firebase">
-                <button (click)="filterWork(firebase, 'firebase')" id="button-firebase" class="button">Firebase</button>
-            </div>
-        </div>
-        <div class="example-area">
-            <div class="examples margin-left" id="el-pollo-loco">
-                <a target="_blank" rel="noopener noreferrer"
-                    href="https://el-pollo-loco.janborcholt.de/index.html">
-                    <div class="flex-img">
-                        <img src="assets/img/screenshots/startscreen_2.png">
-                    </div>
-                </a>
-                <div class="text">
-                    <h1 class="baloo">Pollo Loco</h1>
-                    <h2 class="montserrat">JavaScript | HTML | CSS</h2>
-                    <span id="el-pollo-loco-text" class="montserrat">Jump, run and throw game based on object-oriented approach.
-                        Help Pepe to find coins and tabasco salsa to fight against the crazy hen.
-                    </span>
-                    <div class="button-area">
-                        <a target="_blank" rel="noopener noreferrer"
-                            href="https://github.com/JanFromTheBlock/El_Pollo_Loco">
-                            <div class="div-button">
-                                <button class="button">Github</button>
-                            </div>
-                        </a>
-                        <a target="_blank" rel="noopener noreferrer"
-                            href="https://el-pollo-loco.janborcholt.de/index.html">
-                            <div class="div-button div-mobile-btn">
-                                <button class="button mobile-btn">Live-Test</button>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="examples margin-right" id="join">
-
-                <div class="text text-end">
-                    <h1 class="baloo">Join</h1>
-                    <h2 class="montserrat">JavaScript | HTML | CSS</h2>
-                    <span id="join-text" class="montserrat">Task manager inspired by the Kanban System. Create and organize tasks using
-                        drag and drop functions, assign users and categories
-                    </span>
-                    <div class="button-area">
-                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/JanFromTheBlock/Join">
-                            <div class="div-button justi-end">
-                                <button class="button">Github</button>
-                            </div>
-                        </a>
-                        <a target="_blank" rel="noopener noreferrer"
-                            href="https://join.janborcholt.de/index.html">
-                            <div class="div-button div-mobile-btn">
-                                <button class="button mobile-btn">Live-Test</button>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <a target="_blank" rel="noopener noreferrer" href="https://join.janborcholt.de/index.html">
-                    <div class="flex-img">
-                        <img src="assets/img/screenshots/join.PNG">
-                    </div>
-                </a>
-            </div>
-
-            <div class="examples margin-left" id="pokedex">
-                <a target="_blank" rel="noopener noreferrer"
-                    href="https://pokedex.janborcholt.de/index.html">
-                    <div class="flex-img">
-                        <img src="assets/img/screenshots/pokedex.png">
-                    </div>
-                </a>
-                <div class="text">
-                    <h1 class="baloo">Pokedex</h1>
-                    <h2 class="montserrat">JavaScript | HTML | CSS</h2>
-                    <span id="pokedex-text" class="montserrat">API-based Pokedex, to catalog and obtain information about various species of Pokémon.
-                    </span>
-                    <div class="button-area">
-                        <a target="_blank" rel="noopener noreferrer"
-                            href="https://github.com/JanFromTheBlock/Pokedex">
-                            <div class="div-button">
-                                <button class="button">Github</button>
-                            </div>
-                        </a>
-                        <a target="_blank" rel="noopener noreferrer"
-                            href="https://pokedex.janborcholt.de/index.html">
-                            <div class="div-button div-mobile-btn">
-                                <button class="button mobile-btn">Live-Test</button>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="examples margin-right" id="da-bubble">
-
-                <div class="text text-end">
-                    <h1 class="baloo">DA-Bubble</h1>
-                    <h2 class="montserrat">Angular | FireBase | JavaScript | HTML | CSS</h2>
-                    <span id="da-bubble-text" class="montserrat"> Collaborative platform for teams that offers messaging. It makes real-time communication and collaboration easier for businesses.
-                    </span>
-                    <div class="button-area">
-                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/JanFromTheBlock/DA-Bubble">
-                            <div class="div-button justi-end">
-                                <button class="button">Github</button>
-                            </div>
-                        </a>
-                        <a target="_blank" rel="noopener noreferrer"
-                            href="https://dabubble.janborcholt.de/index.html">
-                            <div class="div-button div-mobile-btn">
-                                <button class="button mobile-btn">Live-Test</button>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <a target="_blank" rel="noopener noreferrer" href="https://dabubble.janborcholt.de/index.html">
-                    <div class="flex-img">
-                        <img src="/assets/img/screenshots/dabubble.PNG">
-                    </div>
-                </a>
-            </div>
-        </div>
+  <div class="my-work">
+    <div class="head">
+      <div id="my-work-title" class="title baloo">My work</div>
+      <span id="my-work-text" class="montserrat"
+        >This page is a sample of my work - please feel free to try them
+        out</span
+      >
     </div>
+    <img class="work-ellipse1" src="assets/img/ellipse.png" alt="" />
+    <div class="filter-buttons">
+      <div class="div-button-all">
+        <button
+          (click)="filterWork(all, 'all')"
+          id="button-all"
+          class="button active"
+        >
+          All
+        </button>
+      </div>
+      <div class="div-button-django">
+        <button
+          (click)="filterWork(django, 'django')"
+          id="button-django"
+          class="button"
+        >
+          Django
+        </button>
+      </div>
+      <div class="div-button-angular">
+        <button
+          (click)="filterWork(angular, 'angular')"
+          id="button-angular"
+          class="button"
+        >
+          Angular
+        </button>
+      </div>
+      <div class="div-button-firebase">
+        <button
+          (click)="filterWork(firebase, 'firebase')"
+          id="button-firebase"
+          class="button"
+        >
+          Firebase
+        </button>
+      </div>
+    </div>
+    <div class="example-area">
+      <div class="examples margin-left" id="videoflix">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.videoflix.janborcholt.de/"
+        >
+          <div class="flex-img">
+            <img src="assets/img/screenshots/videoflix.PNG" />
+          </div>
+        </a>
+        <div class="text">
+          <h1 class="baloo">Videoflix</h1>
+          <h2 class="montserrat">
+            Angular | Django | Javascript | Python | HTML | CSS
+          </h2>
+          <span id="videoflix-text" class="montserrat"
+            >Videoflix is ​​an Angular web platform that provides access to a
+            variety of videos from its own Django database. It is permanently
+            hosted on a vServer and has its own authentication implemented.
+          </span>
+          <div class="button-area">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/JanFromTheBlock/Videoflix_Backend"
+            >
+              <div class="div-button">
+                <button class="button">Github</button>
+              </div>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.videoflix.janborcholt.de/"
+            >
+              <div class="div-button div-mobile-btn">
+                <button class="button mobile-btn">Live-Test</button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="examples margin-right" id="da-bubble">
+        <div class="text text-end">
+          <h1 class="baloo">DA-Bubble</h1>
+          <h2 class="montserrat">
+            Angular | FireBase | JavaScript | HTML | CSS
+          </h2>
+          <span id="da-bubble-text" class="montserrat">
+            Collaborative platform for teams that offers messaging. It makes
+            real-time communication and collaboration easier for businesses.
+          </span>
+          <div class="button-area">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/JanFromTheBlock/DA-Bubble"
+            >
+              <div class="div-button justi-end">
+                <button class="button">Github</button>
+              </div>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://dabubble.janborcholt.de/index.html"
+            >
+              <div class="div-button div-mobile-btn">
+                <button class="button mobile-btn">Live-Test</button>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://dabubble.janborcholt.de/index.html"
+        >
+          <div class="flex-img">
+            <img src="/assets/img/screenshots/dabubble.PNG" />
+          </div>
+        </a>
+      </div>
+      <div class="examples margin-left" id="el-pollo-loco">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://el-pollo-loco.janborcholt.de/index.html"
+        >
+          <div class="flex-img">
+            <img src="assets/img/screenshots/startscreen_2.png" />
+          </div>
+        </a>
+        <div class="text">
+          <h1 class="baloo">Pollo Loco</h1>
+          <h2 class="montserrat">JavaScript | HTML | CSS</h2>
+          <span id="el-pollo-loco-text" class="montserrat"
+            >Jump, run and throw game based on object-oriented approach. Help
+            Pepe to find coins and tabasco salsa to fight against the crazy hen.
+          </span>
+          <div class="button-area">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/JanFromTheBlock/El_Pollo_Loco"
+            >
+              <div class="div-button">
+                <button class="button">Github</button>
+              </div>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://el-pollo-loco.janborcholt.de/index.html"
+            >
+              <div class="div-button div-mobile-btn">
+                <button class="button mobile-btn">Live-Test</button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="examples margin-right" id="join">
+        <div class="text text-end">
+          <h1 class="baloo">Join</h1>
+          <h2 class="montserrat">JavaScript | HTML | CSS</h2>
+          <span id="join-text" class="montserrat"
+            >Task manager inspired by the Kanban System. Create and organize
+            tasks using drag and drop functions, assign users and categories
+          </span>
+          <div class="button-area">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/JanFromTheBlock/Join"
+            >
+              <div class="div-button justi-end">
+                <button class="button">Github</button>
+              </div>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://join.janborcholt.de/index.html"
+            >
+              <div class="div-button div-mobile-btn">
+                <button class="button mobile-btn">Live-Test</button>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://join.janborcholt.de/index.html"
+        >
+          <div class="flex-img">
+            <img src="assets/img/screenshots/join.PNG" />
+          </div>
+        </a>
+      </div>
+
+      <div class="examples margin-left" id="pokedex">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://pokedex.janborcholt.de/index.html"
+        >
+          <div class="flex-img">
+            <img src="assets/img/screenshots/pokedex.png" />
+          </div>
+        </a>
+        <div class="text">
+          <h1 class="baloo">Pokedex</h1>
+          <h2 class="montserrat">JavaScript | HTML | CSS</h2>
+          <span id="pokedex-text" class="montserrat"
+            >API-based Pokedex, to catalog and obtain information about various
+            species of Pokémon.
+          </span>
+          <div class="button-area">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/JanFromTheBlock/Pokedex"
+            >
+              <div class="div-button">
+                <button class="button">Github</button>
+              </div>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://pokedex.janborcholt.de/index.html"
+            >
+              <div class="div-button div-mobile-btn">
+                <button class="button mobile-btn">Live-Test</button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <app-contact-form></app-contact-form>

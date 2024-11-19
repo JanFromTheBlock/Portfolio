@@ -20,9 +20,13 @@ export class SkillSetComponent {
     'assets/img/skills/css.png',
     'assets/img/skills/api.png',
     'assets/img/skills/material_design.png',
+    'assets/img/skills/django.png',
+    'assets/img/skills/python.png',
+    'assets/img/skills/sql.png',
+    'assets/img/skills/postgresql.png',
   ];
 
   titles: string[] = [
-    'Angular', 'TypeScript', 'JavaScript', 'HTML', 'Scrum', 'Firebase', 'GIT', 'CSS', 'Rest-Api', 'Material design'
+    'Angular', 'TypeScript', 'JavaScript', 'HTML', 'Scrum', 'Firebase', 'GIT', 'CSS', 'Rest-Api', 'Material design', 'Django', 'Python', 'SQL', 'PostgreSQL'
   ]
 }

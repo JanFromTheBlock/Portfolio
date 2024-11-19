@@ -9,11 +9,12 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
   styleUrl: './my-work.component.scss'
 })
 export class MyWorkComponent {
-  categories = ['all', 'javascript', 'angular', 'firebase'];
-  all = ['el-pollo-loco', 'join', 'pokedex', 'da-bubble'];
-  javascript = ['el-pollo-loco', 'join', 'pokedex', 'da-bubble'];
-  angular = ['da-bubble'];
+  categories = ['all', 'javascript', 'angular', 'firebase', 'django'];
+  all = ['el-pollo-loco', 'join', 'pokedex', 'da-bubble', 'videoflix'];
+  javascript = ['el-pollo-loco', 'join', 'pokedex', 'da-bubble', 'videoflix'];
+  angular = ['da-bubble', 'videoflix'];
   firebase = ['da-bubble'];
+  django = ['videoflix']
 
 
   filterWork(array: any, title: any){
