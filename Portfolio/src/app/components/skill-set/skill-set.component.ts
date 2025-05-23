@@ -14,19 +14,20 @@ export class SkillSetComponent {
     'assets/img/skills/typescript.png',
     'assets/img/skills/javascript.png',
     'assets/img/skills/html.png',
-    'assets/img/skills/scrum.png',
-    'assets/img/skills/firebase.png',
-    'assets/img/skills/git.png',
     'assets/img/skills/css.png',
     'assets/img/skills/api.png',
-    'assets/img/skills/material_design.png',
+    'assets/img/skills/git.png',
     'assets/img/skills/django.png',
     'assets/img/skills/python.png',
     'assets/img/skills/sql.png',
     'assets/img/skills/postgresql.png',
+    'assets/img/skills/firebase.png',
+    'assets/img/skills/material_design.png',
+    'assets/img/skills/scrum.png',
+    'assets/img/skills/redis.png',
   ];
 
   titles: string[] = [
-    'Angular', 'TypeScript', 'JavaScript', 'HTML', 'Scrum', 'Firebase', 'GIT', 'CSS', 'Rest-Api', 'Material design', 'Django', 'Python', 'SQL', 'PostgreSQL'
+    'Angular', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Rest-Api', 'GIT', 'Django', 'Python', 'SQL', 'PostgreSQL', 'Firebase', 'Material design', 'Scrum', 'Redis'
   ]
 }
