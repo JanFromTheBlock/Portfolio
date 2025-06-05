@@ -18,9 +18,9 @@ export class MainContentComponent implements AfterViewInit {
   constructor(){}
 
   ngAfterViewInit(){
-    setTimeout(() => {
+    window.addEventListener('load', () => {
       document.getElementById('background-loader')?.classList.add('hidden');
-    }, 1500);
+    });
 
   }
 
